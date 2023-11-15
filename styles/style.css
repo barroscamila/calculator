@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    --dark1: rgb(37, 37, 37);
+    --dark2: rgb(60, 60, 60);
+    --light1: #90A19D;
+    --light2: #F0941F;
+
+    --dark2T: rgba(60, 60, 60, 0.60);
+    --light1T: #90a19dd0;
+    --light2T: #f0951fc6;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* config calculator */
+
+#calc {
+    width: 30.8rem;
+    height: 44rem;
+    background-color: var(--dark1);
+    border-radius: 0.8rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+#result {
+    height: 10rem;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    background-color: var(--color1);
+    color: whitesmoke;
+    font-size: 5rem;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#keys {
+    display: flex;
+    flex-direction: row;   
+    flex-wrap: wrap;
+}
+
+.key {
+    width: 7.5rem;
+    height: 6.6rem;
+    border: none;
+    margin: 0.1rem;
+    background-color: var(--dark2);
+    color: white;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+#zeroKey {
+    width: 15.2rem;
+    height: 6.6rem;
+    border-bottom-left-radius: 0.7rem;
+    border: none;
+    margin: 0.1rem;
+    background-color: var(--dark2);
+    color: white;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+#equalKey {
+    width: 7.5rem;
+    height: 6.6rem;
+    border-bottom-right-radius: 0.7rem;
+    border: none;
+    margin: 0.1rem;
+    background-color: var(--light2);
+    color: white;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+
+.orangeKey {
+    background-color: var(--light2);
+}
+
+.grayKey {
+    background-color: var(--light1);
+}
+
+/* config hover */
+
+.key:hover {
+    background-color: var(--dark2T);
+}
+
+#zeroKey:hover {
+    background-color: var(--dark2T);
+}
+
+#equalKey:hover {
+    background-color: var(--light2T);
+}
+
+.orangeKey:hover {
+    background-color: var(--light2T);
+}
+
+.grayKey:hover {
+    background-color: var(--light1T);
+}
+
+
+/* config footer */
+
+footer {
+    color:lightgray;
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-shadow: 0.1rem 0.1rem black;
+}
+
+footer a {
+    text-decoration: none;
+    color: lightgray;
+}
