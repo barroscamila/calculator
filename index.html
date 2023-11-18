@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <main>
         <section id="calc">  
-            <div id="result">
+            <div value="0" id="result">
                 0
             </div>
 
             <div id="keys">
-                <button value="C" class="key grayKey">C</button>
-                <button class="key grayKey">±</button>
-                <button value="%" class="key grayKey">%</button>
+                <button id="clearKey" class="key grayKey">C</button>
+                <button id="posNegKey" class="key grayKey">±</button>
+                <button id="porcentKey" class="key grayKey">%</button>
                 <button value="/" class="key orangeKey">÷</button>
                 <button value="7" class="key">7</button>
                 <button value="8" class="key">8</button>
                 <button value="9" class="key">9</button>
-                <button value="x" class="key orangeKey">x</button>
+                <button value="*" class="key orangeKey">x</button>
                 <button value="4" class="key">4</button>
                 <button value="5" class="key">5</button>
                 <button value="6" class="key">6</button>
@@ -30,9 +31,9 @@
                 <button value="2" class="key">2</button>
                 <button value="3" class="key">3</button>
                 <button value="+" class="key orangeKey">+</button>
-                <button value="0" id="zeroKey">0</button>
+                <button value="0" id="zeroKey" class="key">0</button>
                 <button value="," class="key">,</button>
-                <button value="=" id="equalKey">=</button>
+                <button id="equalKey" class="key">=</button>
             </div>
         </section>
     </main>
